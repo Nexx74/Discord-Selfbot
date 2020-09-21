@@ -1,0 +1,36 @@
+{
+  "name": "unknow-selfbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/translate": "^6.0.2",
+    "@vitalets/google-translate-api": "^4.0.0",
+    "alexa-bot-api": "^0.1.3",
+    "anime-facts": "^1.0.7",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "common-tags": "^1.8.0",
+    "cron": "^1.8.2",
+    "discord-webhook-node": "^1.1.8",
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "got": "^11.7.0",
+    "http": "0.0.1-security",
+    "http-util": "^0.1.4",
+    "moment": "^2.27.0",
+    "node-ipinfo": "^1.0.1",
+    "os": "^0.1.1",
+    "pornsearch": "^2.4.3",
+    "random-puppy": "^1.1.0",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "ytsearcher": "^1.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tayz",
+  "license": "ISC"
+}
