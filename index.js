@@ -814,7 +814,7 @@ if (message.content.startsWith(prefix + "meme")) {
 
     }
 
-    if (message.content.startsWith(prefix + "im14andthisisdeep")) {
+    if (message.content.startsWith(prefix + "im14")) {
         if (message.author.id !== client.user.id) return;
 const embed = new Discord.RichEmbed();
     got('https://www.reddit.com/r/im14andthisisdeep/random/.json').then(response => {
