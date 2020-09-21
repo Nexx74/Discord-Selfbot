@@ -832,7 +832,7 @@ const embed = new Discord.RichEmbed();
         embed.setFooter(`👍 ${memeUpvotes} 💬 ${memeNumComments}`);
         embed.setTimestamp();
         message.channel.send(embed)
-        console.log(`${client.user.tag} ran command </im14andthisisdeep>.`);
+        console.log(`${client.user.tag} ran command </im14>.`);
     })
  }
    
