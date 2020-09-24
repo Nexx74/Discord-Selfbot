@@ -565,23 +565,7 @@ if (command === "/def") {
     console.log(`${client.user.tag} ran command </def>.`)
 
 }
-//---------------------------------------------------------------------
 
-
-if (command === "/dad-joke") {
-
-    if (message.author.id == client.user.id) {
-        Dadjoke = dadjoke[Math.floor(Math.random() * dadjoke.length)]
-        const dadjokeEmbed = new Discord.RichEmbed()
-            .setColor('#800080')
-            .setTitle('Dad Joke')
-            .setDescription(Dadjoke)
-            .setTimestamp()
-        message.channel.send(dadjokeEmbed)
-        console.log(`${client.user.tag} ran command </dad-joke>.`)
-
-    }
-}
 
 //---------------------------------------------------------------------
 
