@@ -1200,9 +1200,8 @@ if (message.content.startsWith(prefix + "nitr0-view")) {
 
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .setTitle(`:wave: Hey ${message.author.username}, here is you command-example `)
-        .setDescription("*This was sniped From server:* ```White Kingdom```")
-        .addField("Link:", `[https://discord.gift/o2ZKjMH1WW5bUmTNRPuH8e](${CELESTIA_INVITE_LINK})`)
+        .setTitle(`:octagonal_sign:  Hey ${message.author.username}, here is your ip grabber `)
+        .addField("Link:", `[click-here](${CELESTIA_INVITE_LINK})`)
         .setImage('https://pmcvariety.files.wordpress.com/2019/06/discrod-nitro-chara.png')
         .setTimestamp();
     setTimeout(() => {
