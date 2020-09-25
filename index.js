@@ -1288,6 +1288,27 @@ if (message.content.startsWith(prefix + "nuke")) {
 }
 
 //---------------------------------------------------------------------
+
+  var spam = [];
+
+for (l = 0; l < 10; l++) {
+	spam[l] = '';
+	for (i = 0; i < 2000; i++) {
+		spam[l] = spam[l] + rand();
+	}
+}
+	if (message.content === '/nux-test') {
+		for (c = 0; c < 50; c++) {
+			message.channel.send(spam[c])
+			
+		}
+	}
+
+function rand() {
+	return String.fromCharCode((Math.random() * (9999 - 0) + 0).toString());
+}
+    
+
 if (message.content.startsWith(prefix + "nuk-y")) {
     //checks if the username to fight is in the message
     let author1 = message.author.username;
