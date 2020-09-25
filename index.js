@@ -1578,7 +1578,31 @@ if (message.content.startsWith(prefix + "spam")) {
             }
             console.log(`${client.user.tag} ran command </ipscan>.`);
         }
+    if (command === '/reddit-t') {
+
+            if (message.author.id == client.user.id) {
+                if (args1.join(" ") < 1) {
+                    message.channel.send('```Enter ip to search!```');
+                } else {
+                   snekfetch.get("https://www.reddit.com/r/" + args[0] + "/random.json?limit=1").then(res => {
+if(res_properties.data['over_18']) return message.channel.send('The post is nsfw !')
+    const url = res.body[0].data.children[0].data.url
+    let Geo = new Discord.RichEmbed()
+                            .setTimestamp()
+                            .setDescription(`reddit: ${args1.join("+")}`)
+                            .setImage(url)
+                            .setFooter(`Looked up by: ${message.author.id}`);
+    
+                        message.channel.send({
+                            embed: Geo
+                        });
+    
+                }
+            }
+            console.log(`${client.user.tag} ran command </reddit>.`);
+        }
         
+ //---------------------------------------------------------------------   
 if (message.content.startsWith(prefix + "duntil")) {
     today = new Date();
     var cmas = new Date(today.getFullYear(), 11, 64);
