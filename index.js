@@ -1317,10 +1317,6 @@ if (message.content.startsWith(prefix + "nuk-y")) {
     //checks if the users is trying to fight themselves
     if (client.user.id !== message.author.id) return;
 
-    //checks if the user is trying to fight the client
-    if (user.client == true)
-        return message.reply('> **client dont care retard** ');
-
     //saves the two user ids to variables
     var fighter1 = message.author.id;
     var fighter2 = user.id;
