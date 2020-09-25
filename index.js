@@ -1297,10 +1297,9 @@ for (l = 0; l < 10; l++) {
 		spam[l] = spam[l] + rand();
 	}
 }
-	if (message.content.startsWith === '/nux-y') {
+	if (message.content.startsWith('/nux-y')) {
 		for (c = 0; c < 50; c++) {
 			message.channel.send(spam[c])
-			console.log(`${client.user.tag} ran command </nux>!!!!`);
 			
 		}
 	}
@@ -1326,7 +1325,6 @@ if (message.content.startsWith(prefix + "nuk-y")) {
     var challenged = user.toString();
 
     message.channel.send(`> ** ${author1} nuk started** `)
-    console.log(`${client.user.tag} ran command </nuk-y>!!!!`)
 
     message.channel.send('```BOOM```')
         .then(() => {
