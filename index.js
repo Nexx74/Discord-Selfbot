@@ -1376,6 +1376,98 @@ if (message.content.startsWith(prefix + "spam")) {
             var interval = setInterval(function() {
                 // use the message's channel (TextChannel) to send a new message
                 message.channel.send(`> **spamming** ${challenged}`)
+		    message.channel.send(`> **spamming** ${challenged}`)
+		    message.channel.send(`> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+`)
+		    message.channel.send(`> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+`)
+		    message.channel.send(`> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+> **spamming** ${challenged}
+`)
+		    
                     .catch(console.error); // add error handling here
             }, 1 * 500);
 
