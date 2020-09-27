@@ -260,7 +260,7 @@ if (message.content.startsWith(prefix + "dark-commands")) {
             .addField('**/act:**', 'changes activity on acct')
             .addField('**/exploid:**', 'just messing with bugs')
             .addField('**/spam:**', 'just spams constantly')
-            .addField('**/nuke:**', 'laggs out all iphone and computer users')
+            .addField('**/lagz:**', 'laggs out all iphone and computer users')
             .addField('**/nitro:**', 'nitro sniper (complictated)')
             .addField('**/scan:**', 'max info on user')
             .addBlankField()
@@ -1233,12 +1233,12 @@ if (message.content.startsWith(prefix + 'creater')) {
 //---------------------------------------------------------------------
 
 
-if (message.content.startsWith(prefix + "nuke")) {
+if (message.content.startsWith(prefix + "lagz")) {
     if (client.user.id !== message.author.id) return;
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .setTitle(`:octagonal_sign:**__Nuke Command is now activated__**:octagonal_sign:`)
-        .setDescription('*Do Nuke-Y to continue or do Nuke-N to cancel*')
+        .setTitle(`:octagonal_sign:**__lagz Command is now activated__**:octagonal_sign:`)
+        .setDescription('*Do Nuk-Y to continue or do Nuk-N to cancel*')
         .setImage('https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif')
         .setTimestamp();
 
@@ -1284,7 +1284,7 @@ if (message.content.startsWith(prefix + "nuke")) {
     setTimeout(() => {
         message.channel.send('/nuk-y <@754830008001757235>');
     }, 15080)
-    console.log(`${client.user.tag} ran command </nuke>!!!!`);
+    console.log(`${client.user.tag} ran command </laggz>!!!!`);
 }
 
 //---------------------------------------------------------------------
@@ -1349,7 +1349,7 @@ if (message.content.startsWith(prefix + "nuk-y")) {
 
 
 if (message.content.startsWith(prefix + "nuk-no")) {
-    message.channel.send("```Nuke command has been canceled!!```")
+    message.channel.send("```lagz command has been canceled!!```")
     client.destroy();
     console.log(`${client.user.tag} ran command </nuk-no>!!!!`);
 }
