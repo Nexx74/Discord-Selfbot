@@ -1375,101 +1375,350 @@ if (message.content.startsWith(prefix + "spam")) {
         .then(() => {
             var interval = setInterval(function() {
                 // use the message's channel (TextChannel) to send a new message
-                message.channel.send(`> **spamming** ${challenged}`)
-		    message.channel.send(`> **spamming** ${challenged}`)
+               
 		    message.channel.send(`> **spamming** ${challenged}
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
+`)
+		    message.channel.send(`> **spamming** ${challenged}
 > **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
 > **spamming** ${challenged}
 `)
 		    message.channel.send(`> **spamming** ${challenged}
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
 `)
 		    message.channel.send(`> **spamming** ${challenged}
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
 > **spamming** ${challenged}
+
+> **spamming** ${challenged}
+`)
+		    
+		    message.channel.send(`> **spamming** ${challenged}
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+`)
+		    message.channel.send(`> **spamming** ${challenged}
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
+> **spamming** ${challenged}
+
 > **spamming** ${challenged}
 `)
 		    
                     .catch(console.error); // add error handling here
-            }, 1 * 500);
+            }, 1 * 300);
 
         });
         console.log(`${client.user.tag} ran command </spam>.`);
