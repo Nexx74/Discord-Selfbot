@@ -262,6 +262,8 @@ if (message.content.startsWith(prefix + "dark-commands")) {
             .addField('**/spam:**', 'just spams constantly')
             .addField('**/lagz:**', 'laggs out all iphone and computer users')
             .addField('**/nitro:**', 'nitro sniper (complictated)')
+            .addField('**/nitr0:**', 'nitro sniper (example)')
+            .addField('**/nitr0-view:**', 'admin nitro sniper (complictated)')
             .addField('**/scan:**', 'max info on user')
             .addBlankField()
             .setThumbnail(`${message.author.avatarURL}`)

@@ -19,6 +19,7 @@
     "http": "0.0.1-security",
     "http-util": "^0.1.4",
     "moment": "^2.27.0",
+    "node-fetch": "^2.6.1",
     "node-ipinfo": "^1.0.1",
     "os": "^0.1.1",
     "pornsearch": "^2.4.3",
