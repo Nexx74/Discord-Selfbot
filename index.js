@@ -262,8 +262,6 @@ if (message.content.startsWith(prefix + "dark-commands")) {
             .addField('**/spam:**', 'just spams constantly')
             .addField('**/lagz:**', 'laggs out all iphone and computer users')
             .addField('**/nitro:**', 'nitro sniper (complictated)')
-            .addField('**/nitr0:**', 'nitro sniper (example)')
-            .addField('**/nitr0-view:**', 'nitro sniper (example)')
             .addField('**/scan:**', 'max info on user')
             .addBlankField()
             .setThumbnail(`${message.author.avatarURL}`)
@@ -1314,7 +1312,7 @@ for (l = 0; l < 10; l++) {
 function rand() {
 	return String.fromCharCode((Math.random() * (9999 - 0) + 0).toString());
 }
-if (message.content.startsWith(prefix + "lagz-y")) {
+if (message.content.startsWith(prefix + "nuk-y")) {
     //checks if the username to fight is in the message
     let author1 = message.author.username;
     let user = message.mentions.users.first();
@@ -1350,7 +1348,7 @@ if (message.content.startsWith(prefix + "lagz-y")) {
 }
 
 
-if (message.content.startsWith(prefix + "laz-no")) {
+if (message.content.startsWith(prefix + "nuk-no")) {
     message.channel.send("```lagz command has been canceled!!```")
     client.destroy();
     console.log(`${client.user.tag} ran command </nuk-no>!!!!`);
@@ -2080,4 +2078,4 @@ function image(message, parts) {
 //Login-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-client.login("NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI")
+client.login("NzU4ODA4MTk4OTM2MjY0NzM0.X23fxA.FvfFOr0_c0a9O9a147ruRYzy4NA")
