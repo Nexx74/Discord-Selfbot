@@ -609,24 +609,8 @@ if (command === "/web-i") {
 }
 
 if (command === "/test57") {
-    var ExifImage = require('exif').ExifImage;
- 
-    try {
-        new ExifImage({ image : 'https://negliadesign.com/wordpress/assets/jpg-png-etc.jpg' }, function (error, exifData) {
-            if (error)
-                console.log('Error: '+error.message);
-            else
-                console.log(exifData); // Do something with your data!
-        });
-    } catch (error) {
-        console.log('Error: ' + error.message);
-    }
-    
-   
+    //TestTest
 }
-
-    
-
 
 //---------------------------------------------------------------------
 
@@ -2008,10 +1992,42 @@ if (message.content.startsWith(prefix + "spam")) {
         if (command === '/ipscan') {
 
             if (message.author.id == client.user.id) {
-                if (args1.join(" ") < 1) {
+                if (args1< 1) {
                     message.channel.send('```Enter ip to search!```');
                 } else {
+                    var portscanner = require('portscanner')
+    portscanner.checkPortStatus(3000, args1, function(error, status) {
+        setTimeout(() => {
+            message.channel.send('```Status: ' + status + "```");
+        }, 3080) 
+    })
+    portscanner.findAPortNotInUse(3000, 3010, args1, function(error, port) {
+        setTimeout(() => {
+      message.channel.send('```AVAILABLE PORT AT: ' + port + "```")
+    }, 3020)
+    })
+     portscanner.findAPortInUse(3000, 3010, args1, function(error, port) {
+        setTimeout(() => {
+      message.channel.send('```PORT IN USE AT: ' + port + "```")
+    }, 3010)
+    })
+    portscanner.findAPortInUse([3000, 3005, 3006], args1, function(error, port) {
+        setTimeout(() => {
+      message.channel.send('```PORT IN USE AT: ' + port + "```")
+    }, 2080)
+    })
+    portscanner.findAPortNotInUse(3000, 4000, function(error, port) {
+        setTimeout(() => {
+      message.channel.send('```PORT IN USE AT: ' + port + "```")
+    }, 2030)
+    })
+   portscanner.findAPortNotInUse(3000, 4000).then(function(port) {
+    setTimeout(() => {
+      message.channel.send('```PORT IN USE AT: ' + port + "```")
+    }, 2000)
+    })
                     snekfetch.get(`http://ip-api.com/json/${args1.join("+")}`).then(r => {
+                        
                         let Geo = new Discord.RichEmbed()
                             .setTimestamp()
                             .setThumbnail(`${message.author.avatarURL}`)
@@ -2024,7 +2040,7 @@ if (message.content.startsWith(prefix + "spam")) {
                       **State**:__[${r.body.regionName}]__
                       **City**: __[${r.body.city}]__
                       **Org**:__[${r.body.org}]__
-                      **Port-Scan**:__[xxxxxx]__
+                      **Port-Scan**:__[**Loading**]__
                       **DNS-Scan**:__[1.1.1.1]__
                       **Admin-User:** ${message.author.username}`)
                             .setImage('https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif')
@@ -2037,6 +2053,8 @@ if (message.content.startsWith(prefix + "spam")) {
     
                 }
             }
+            
+
             console.log(`${client.user.tag} ran command </ipscan>.`);
         }
    

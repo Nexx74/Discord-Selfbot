@@ -24,6 +24,7 @@
     "node-ipinfo": "^1.0.1",
     "os": "^0.1.1",
     "pornsearch": "^2.4.3",
+    "portscanner": "^2.2.0",
     "random-puppy": "^1.1.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
