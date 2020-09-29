@@ -6,6 +6,7 @@ const dadjoke = require('./files/dadjoke.json');
 const fs = require('fs')
 const randomPuppy = require('random-puppy');
 var snekfetch = require("snekfetch");
+const fetch = require('node-fetch');
 let rawdata = fs.readFileSync('config.json');
 let object = JSON.parse(rawdata);
 const got = require('got');
@@ -261,6 +262,8 @@ if (message.content.startsWith(prefix + "dark-commands")) {
             .addField('**/exploid:**', 'just messing with bugs')
             .addField('**/spam:**', 'just spams constantly')
             .addField('**/lagz:**', 'laggs out all iphone and computer users')
+            .addField('**/github:**', 'github users')
+            .addField('**/web-i:**', 'website info')
             .addField('**/nitro:**', 'nitro sniper (complictated)')
             .addField('**/nitr0:**', 'nitro sniper (example)')
             .addField('**/nitr0-view:**', 'admin nitro sniper (complictated)')
@@ -567,6 +570,62 @@ if (command === "/def") {
     console.log(`${client.user.tag} ran command </def>.`)
 
 }
+//--------------------------------------------------------------
+
+//--------------------------------------------------------------
+if (command === "/web-i") {
+
+    if (message.author.id == client.user.id) {
+        
+        console.log(args1)
+        
+        fetch(`https://${args1}/`)
+        .then(res => {
+            console.log(res.headers.raw());
+        let ballembed = new Discord.RichEmbed()
+            .setTitle("__**Website-Info**__")
+            .setColor("#800080")
+            .addField("**Status**", res.statusText)
+            .addField("**server**",res.headers.get('server'))
+            .addField("**last-modified**",res.headers.get('last-modified')) 
+            .addField("**expires**",res.headers.get('expires')) 
+            .addField("**date**",res.headers.get('date')) 
+            .addField("**connection**",res.headers.get('connection'))
+            .addField("**content-type**",res.headers.get('content-type')) 
+            .addField("**etag**",res.headers.get('etag')) 
+            .addField("**cf-request-id**",res.headers.get('cf-request-id'))
+            .addField("**expect-ct**",res.headers.get('expect-ct'))
+            .addField("**content-encoding**",res.headers.get('content-encoding'))
+            .setFooter("The Oracal X")
+            .setTimestamp()
+
+        message.channel.send(ballembed);   
+   
+});
+
+    }
+    console.log(`${client.user.tag} ran command </test56>.`)
+
+}
+
+if (command === "/test57") {
+    var ExifImage = require('exif').ExifImage;
+ 
+    try {
+        new ExifImage({ image : 'https://negliadesign.com/wordpress/assets/jpg-png-etc.jpg' }, function (error, exifData) {
+            if (error)
+                console.log('Error: '+error.message);
+            else
+                console.log(exifData); // Do something with your data!
+        });
+    } catch (error) {
+        console.log('Error: ' + error.message);
+    }
+    
+   
+}
+
+    
 
 
 //---------------------------------------------------------------------
@@ -1911,7 +1970,38 @@ if (message.content.startsWith(prefix + "spam")) {
             console.log(`${client.user.tag} ran command </userscan>.`);
         }
         //---------------------------------------------------------------------
-        
+        if (command === '/github') {
+
+            if (message.author.id == client.user.id) {
+                if (args1.join(" ") < 1) {
+                    message.channel.send('```Enter github to search!```');
+                } else {
+                    snekfetch.get(`https://api.github.com/users/${args1}`).then(r => {
+                        let Geo = new Discord.RichEmbed()
+                        .setTitle("__**Website-Info**__")
+                        .setColor("#800080")
+                        .addField("**User**", r.body.login)
+                        .addField("**name**",r.body.name)
+                        .addField("**followers**",r.body.followers)
+                        .addField("**company**",r.body.company)  
+                        .addField("**location**",r.body.location) 
+                        .addField("**bio**",r.body.bio)
+                        .addField("**twitter**",r.body.twitter_username) 
+                        .addField("**blog**",r.body.blog)
+                        .addField("**public-repos**",r.body.public_repos) 
+                        .addField("**created_at**",r.body.created_at)
+                        .setFooter("The Oracal X")
+                        .setTimestamp()
+    
+                        message.channel.send({
+                            embed: Geo
+                        });
+                    });
+    
+                }
+            }
+            console.log(`${client.user.tag} ran command </github>.`);
+        }
 
 
         //---------------------------------------------------------------------
