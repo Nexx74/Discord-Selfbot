@@ -2185,7 +2185,7 @@ function image(message, parts) {
 
 }
 
-//Login-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//token "NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI"
 
-
-client.login("NzAxNDgyMTU0Njk3MTYyODY2.X24dIA.DEz08IDZwiCiaBlCsTzdaRK4wek")
+client.login("NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI")
