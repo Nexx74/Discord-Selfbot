@@ -72,7 +72,7 @@ client.on('message', message => {
                 .addBlankField()
                 .addField("*PING*", `${ping} ms`)
                 .setThumbnail(`https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif`)
-                .setTimestamp()F
+                .setTimestamp()
             message.channel.send(help)
             console.log(`${client.user.tag} ran command </ping>.`)
         }
