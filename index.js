@@ -72,7 +72,7 @@ client.on('message', message => {
                 .addBlankField()
                 .addField("*PING*", `${ping} ms`)
                 .setThumbnail(`https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif`)
-                .setTimestamp()
+                .setTimestamp()F
             message.channel.send(help)
             console.log(`${client.user.tag} ran command </ping>.`)
         }
@@ -2200,4 +2200,4 @@ function image(message, parts) {
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //token "NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI"
 
-client.login("mfa.WdqoN9GSWbV-HkRzL8XautvSqaX855vcrXWZOpaeWXZ8926pNlEvcjjGtrDVubDKo_F6z_Z1LMgKbHPOamho")
+client.login("NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI")
