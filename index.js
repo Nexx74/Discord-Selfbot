@@ -2198,6 +2198,6 @@ function image(message, parts) {
 }
 
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//token "NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI"
+//token "NzYyNDI2Mzc5MDM1NzM4MTMy.X3pBXA.ZTyi3pHncni7y295MNLpNZczBR0"
 
-client.login("NzU4ODA4MTk4OTM2MjY0NzM0.X3G8Gw.KsSjAAyHSdY88lugnP2JYTo_DBI")
+client.login("NzYyNDI2Mzc5MDM1NzM4MTMy.X3pBXA.ZTyi3pHncni7y295MNLpNZczBR0")
