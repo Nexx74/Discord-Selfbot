@@ -68,7 +68,7 @@ let channel = client.channels.get("759889134214447144");
 channel.fetchMessages({ limit: 1 }).then(messages => {
   let lastMessage = messages.first();
 
- message.del();
+ message.delete();
 
 })
 .catch(console.error);
