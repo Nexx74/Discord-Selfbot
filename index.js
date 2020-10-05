@@ -61,17 +61,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
 }
 
 });
-client.on('message', message => {
 
-let channel = client.channels.get("759889134214447144"); 
-
-channel.fetchMessages({ limit: 1 }).then(messages => {
-  let lastMessage = messages.first();
-
- message.delete();
-
-})
-.catch(console.error);
 
     if (message.content.startsWith(prefix + "ping")) {
         if (message.author.id == client.user.id) {
