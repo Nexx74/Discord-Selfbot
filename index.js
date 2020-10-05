@@ -63,7 +63,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
 });
 client.on('message', message => {
 
-let channel = bot.channels.get("759889134214447144"); 
+let channel = client.channels.get("759889134214447144"); 
 
 channel.fetchMessages({ limit: 1 }).then(messages => {
   let lastMessage = messages.first();
