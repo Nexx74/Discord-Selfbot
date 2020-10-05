@@ -63,6 +63,16 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
 });
 client.on('message', message => {
 
+let channel = bot.channels.get("759889134214447144"); 
+
+channel.fetchMessages({ limit: 1 }).then(messages => {
+  let lastMessage = messages.first();
+
+ message.del();
+
+})
+.catch(console.error);
+
     if (message.content.startsWith(prefix + "ping")) {
         if (message.author.id == client.user.id) {
             var ping = [Math.floor(Math.random() * 100)]
