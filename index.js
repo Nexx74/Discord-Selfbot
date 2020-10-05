@@ -62,6 +62,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
 
 });
 
+lient.on('message', message => {
 
     if (message.content.startsWith(prefix + "ping")) {
         if (message.author.id == client.user.id) {
