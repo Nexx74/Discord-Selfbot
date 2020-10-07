@@ -1296,7 +1296,7 @@ if (message.content.startsWith(prefix + "lagz")) {
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setTitle(`:octagonal_sign:**__lagz Command is now activated__**:octagonal_sign:`)
-        .setDescription('*Do lagz-y to continue or do lagz-no to cancel*')
+        .setDescription('*Do laggz-y to continue or do lagz-no to cancel*')
         .setImage('https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif')
         .setTimestamp();
 
@@ -1371,7 +1371,7 @@ for (l = 0; l < 10; l++) {
 function rand() {
 	return String.fromCharCode((Math.random() * (9999 - 0) + 0).toString());
 }
-if (message.content.startsWith(prefix + "nuk-y")) {
+if (message.content.startsWith(prefix + "laggz-y")) {
     //checks if the username to fight is in the message
     let author1 = message.author.username;
     let user = message.mentions.users.first();
