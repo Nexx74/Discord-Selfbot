@@ -1296,7 +1296,7 @@ if (message.content.startsWith(prefix + "lagz")) {
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setTitle(`:octagonal_sign:**__lagz Command is now activated__**:octagonal_sign:`)
-        .setDescription('*Do Nuk-Y to continue or do Nuk-N to cancel*')
+        .setDescription('*Do lagz-y to continue or do lagz-no to cancel*')
         .setImage('https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif')
         .setTimestamp();
 
@@ -1342,7 +1342,7 @@ if (message.content.startsWith(prefix + "lagz")) {
     setTimeout(() => {
         message.channel.send('https://media.tenor.com/images/6e470af0a0fd69c4ff213a8de0bc7c5d/tenor.gif');
     }, 15080)
-    console.log(`${client.user.tag} ran command </laggz>!!!!`);
+    console.log(`${client.user.tag} ran command </lagz>!!!!`);
 }
 
 //---------------------------------------------------------------------
