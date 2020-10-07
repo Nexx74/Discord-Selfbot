@@ -2199,6 +2199,6 @@ function image(message, parts) {
 }
 
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//token "NzYyNDI2Mzc5MDM1NzM4MTMy.X3pBXA.ZTyi3pHncni7y295MNLpNZczBR0"
+//token "NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8"
 
-client.login("NzYyNDI2Mzc5MDM1NzM4MTMy.X3pBXA.ZTyi3pHncni7y295MNLpNZczBR0")
+client.login("NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8")
