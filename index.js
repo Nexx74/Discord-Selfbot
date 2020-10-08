@@ -28,11 +28,16 @@ const hook = new Webhook("https://discord.com/api/webhooks/763874383000895498/kD
 
 client.on("messageDelete", (messageDelete) => {
     if (messageDelete.author.bot) return;
-    messageDelete.channel.send(`/deleted  <@${messageDelete.author.id}>  ${messageDelete.content}`).then((message) => {
-        
-            message.edit(".");
-        
-    })
+    if (messageDelete.author.id == client.user.id) return;
+    const embed = new MessageBuilder()
+    .setAuthor('Rain', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
+    .setTitle("**Deleted**")
+    .setColor("#0ff000")
+    .setThumbnail('https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif')
+    .setDescription(`You have a deleted message from: ${messageDelete.author}`)
+    .addField("**Text: **", messageDelete.content);
+hook.send(embed);
+    
 }); 
 
 client.on('ready', () => {
