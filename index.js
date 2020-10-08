@@ -661,7 +661,7 @@ if (message.content.startsWith("/8ball")) {
 }
 
 //---------------------------------------------------------------------
-if (message.content.startsWith("/rand")) {
+if (message.content.startsWith("/rand10")) {
 
     if (message.author.id == client.user.id) {
         let replies = [
