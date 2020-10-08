@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const Pornsearch = require('pornsearch');
 const client = new Discord.Client();
 const HttpUtil = require('./files/http-util');
 const util = require('./files/util.json');
@@ -16,31 +17,24 @@ var mathprefix = "m/"
 const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
-const kap = "https://cdn.discordapp.com/emojis/341536265688186891.png";
-const cat = "https://media.discordapp.net/attachments/748324372334510081/751207313469079652/bird.gif";
-const lol = "https://media.discordapp.net/attachments/748324372334510081/751210464058409151/nitro.gif";
-const lmao = "https://media.discordapp.net/attachments/748324372334510081/751210743046602783/lmao.gif";
-const dead = "https://media.discordapp.net/attachments/748324372334510081/751214349535936552/dead.gif";
-const sad = "https://media.discordapp.net/attachments/748324372334510081/751214347417682041/dead2.gif";
-const nitro = "https://media.discordapp.net/attachments/748324372334510081/751212338966822933/lol.gif";
-const rain = "https://media.discordapp.net/attachments/748324372334510081/751211441327177829/rain.gif";
-const huh = "https://media.discordapp.net/attachments/748324372334510081/751207067016102079/huh.gif";
+
 const {
     Webhook,
     MessageBuilder
 } = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/741754464272384070/sxSNPefAme8D0D9cG9-AeXvmTTHhYguTKdoYSkyyonV-YJ1ZF1r5T6_MAbL4HVyltPoX");
+const hook = new Webhook("https://discord.com/api/webhooks/763874383000895498/kD_NIvMXPBSWkwhR3IJZXWoqai1cglgSky_D9JBwgqA4h5md3tchFJvj4HPHlVXftXqm");
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/*
+
 client.on("messageDelete", (messageDelete) => {
+    if (messageDelete.author.bot) return;
     messageDelete.channel.send(`/deleted  <@${messageDelete.author.id}>  ${messageDelete.content}`).then((message) => {
         
             message.edit(".");
         
     })
 }); 
-*/
+
 client.on('ready', () => {
     client.user.setActivity(" ... ", "https://www.twitch.tv/twitch");
     console.log('Welcome:', `${client.user.tag}!`)
@@ -511,6 +505,27 @@ if (message.content.startsWith(prefix + "serverinfo")) {
 }
 
 //---------------------------------------------------------------------
+if (message.content.startsWith('/deleted')) {
+    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+    let args = messageArray.slice(1);
+    let reason = args.slice(1).join(' ');
+    let user = message.mentions.users.first();
+    if (!message.author.id == client.user.id) return message.reply('you cannot use that command')
+    if (message.mentions.users.size < 1) return message.reply('You must mention someone.');
+    if (reason.length < 1) return message.reply('You must have a note.');
+    const embed = new MessageBuilder()
+        .setAuthor('Rain', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
+        .setTitle("**Deleted**")
+        .setColor("#0ff000")
+        .setThumbnail('https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif')
+        .setDescription(`You have made a note on server \`${message.guild.name}\``)
+        .addField("**Text: **", reason);
+
+    hook.send(embed);
+    console.log(`${client.user.tag} ran command </delete>.`)
+
+}
 
 if (message.content.startsWith('/note')) {
     let messageArray = message.content.split(" ");
@@ -606,8 +621,8 @@ if (command === "/web-i") {
             .addField("**connection**",res.headers.get('connection'))
             .addField("**content-type**",res.headers.get('content-type')) 
             .addField("**etag**",res.headers.get('etag')) 
-            .addField("**cf-request-id**",res.headers.get('cf-request-id'))
-            .addField("**expect-ct**",res.headers.get('expect-ct'))
+            .addField("**Cookie-Data**",res.headers.get('cf-request-id'))
+            .addField("**Ct-Tag**",res.headers.get('expect-ct'))
             .addField("**content-encoding**",res.headers.get('content-encoding'))
             .setFooter("The Oracal X")
             .setTimestamp()
@@ -617,14 +632,73 @@ if (command === "/web-i") {
 });
 
     }
-    console.log(`${client.user.tag} ran command </test56>.`)
+    console.log(`${client.user.tag} ran command </Web-i>.`)
+
+}
+if (message.content.startsWith(prefix + 'nitrx')){
+    var embed = new Discord.RichEmbed()
+    .setAuthor("NITRO PRIZE")
+    .setDescription ("the bot buys nitro or gifts every two weeks when you do ?nitro the bot gives you a code its very rare but one person form a random server will win the gift by getting the real nitro /gift gl ", "cheating will get you banned from bot this command has a 2 min cooldown")
+    .addField('https:/discord.gift/'+ Math.floor(10000000000000000000 + Math.random() * 9000000000000000000).toString(36).substr(0, 36) , "Enjoy")
+    .setThumbnail ("https://media1.tenor.com/images/42a8d4625aeb088c45eba5a84ca36325/tenor.gif?itemid=11193323")
+    .setColor ("00ff00");
+    message.channel.send("Hey there <@" + message.author.id + "> you have been entered in a selection to win a random discord gift please wait 1 min to recive your chance at the prize in the mean time check out the other commands ")
+    setTimeout(() => {  message.channel.send(embed); }, 1);
 
 }
 
-if (command === "/test57") {
-    //TestTest
-}
 
+
+if (message.content.startsWith("/loli")) {
+
+    if (message.author.id == client.user.id) {
+        let replies = [
+"https://us.rule34.xxx//images/3402/86ac1657b8f3019e15b5e5d04ab6e10fd6e95643.jpg",
+"https://us.rule34.xxx/thumbnails/3444/thumbnail_12289398f6130fc4ee63541d9be41988.jpg",
+"https://us.rule34.xxx/thumbnails/3439/thumbnail_262efff326305cf82b30b82aa5fc94453c91e3f6.jpg",
+"https://us.rule34.xxx/thumbnails/3392/thumbnail_d2cbe433baf6534353eee90629bec725.jpg",
+"https://us.rule34.xxx/thumbnails/3369/thumbnail_7f67d85a54d8cc77def4eb9317155b4e.jpg",
+"https://us.rule34.xxx/thumbnails/2883/thumbnail_dcf9108524443239c7114d48b74e040d.jpg",
+"https://us.rule34.xxx/thumbnails/3351/thumbnail_2f419b8e402580769dea833a3cb41f82.jpg",
+"https://us.rule34.xxx/thumbnails/3276/thumbnail_b324fdc571fcb391694e5cc1e4f7f0b8e46d4832.jpg",
+"https://us.rule34.xxx/thumbnails/2165/thumbnail_18b71a588b513cd3bdd103038ad66801694f1c2e.jpg",
+"https://us.rule34.xxx/thumbnails/2345/thumbnail_74cc1c7b19f7e34fe6b750f905e7fd3f.jp",
+"https://us.rule34.xxx/thumbnails/692/thumbnail_fbab6a1ab8ecd604751253944e42ad9f8bdac54e.jpg",
+""
+        ];
+
+        var result = replies[Math.floor(Math.random() * replies.length)];
+
+        let ballembed = new Discord.RichEmbed()
+            .setTitle("Loli!")
+            .setColor("#800080")
+            .setImage(result)
+            .setFooter("The loli king");
+
+        message.channel.send(ballembed);
+        console.log(`${client.user.tag} ran command </loli>.`);
+    }
+}
+if (command === "/embed") {
+            let help = new Discord.RichEmbed()
+                .setTitle("**__Embed__**")
+                .setColor("BLUE")
+                .addBlankField()
+                .setDescription(`**${args1}**`)
+                .setThumbnail(`${message.author.avatarURL}`)
+                .setFooter(" ᥅ꪖꪶꪀ ")
+                .setTimestamp()
+            message.channel.send(help)
+            console.log(`${client.user.tag} ran command </embeds>.`)
+        
+}
+if (command === "/cp") {
+    console.log(`${client.user.tag} ran command </cp>.`)
+
+    message.channel.send('/image cheese pizza').then((message) => {
+        message.edit("lol Pedo @everyone look a pedo HAHAHA get caught PEDOO");
+    });
+}
 //---------------------------------------------------------------------
 
 if (message.content.startsWith("/8ball")) {
@@ -2206,7 +2280,69 @@ function image(message, parts) {
     });
 
 }
-
+client.on('message', message => {
+    const fullContents = message.content.trim().split(" ");
+    if (message.author.bot) {return false};
+    if (fullContents[0] !== "/porn") {return false};
+    // BOT INTRODUCTION
+    if (fullContents.length === 1) {
+      let introduction = new Discord.RichEmbed()
+      .setAuthor("᥅ꪖꪶꪀ is hot")
+      .addField("Usage", "just search for porn")
+      .addField("NOTICE:", "Dont be gay")
+      .setColor(0xEA2027);
+      message.channel.send(introduction);
+      return false;
+    };
+    
+    // REQUESTS VIDEO / GIFS
+    if (fullContents[1] === "-v") {
+      getPornVideo(fullContents.slice(2, fullContents.length).join(" "))
+      .then(video => message.channel.send(video));
+    } else {
+      getPornGif(fullContents.slice(1, fullContents.length).join(" "))
+      .then(gif => message.channel.send(gif));
+    };
+  });
+  async function getPornGif(query) {
+    const embedMessage = new Discord.RichEmbed();
+    return Pornsearch.search(query)
+    .gifs()
+    .then(gifs => {
+      const randomGif = gifs[Math.floor(Math.random() * Math.floor(gifs.length))];
+      embedMessage
+      .setImage(randomGif.url)
+      .setColor(0xEA2027);
+      return embedMessage;
+    })
+    .catch(err => {
+      console.error(err);
+      return "No GIFs found...";
+    });
+  };
+  async function getPornVideo(query) {
+    const embedMessage = new Discord.RichEmbed();
+    return Pornsearch.search(query)
+    .videos()
+    .then(videos => {
+      videoList = videos;
+      videoList.some(function(v, i){
+        if (v.title.match("Ads By Traffic Junky")) videoList.splice(i,1);
+      });
+      const randomVideo = videoList[Math.floor(Math.random() * Math.floor(videoList.length))];
+      embedMessage
+      .setTitle(randomVideo.title)
+      .setURL(randomVideo.url)
+      .setDescription(randomVideo.duration)
+      .setImage(randomVideo.thumb)
+      .setColor(0xEA2027);
+      return embedMessage;
+    })
+    .catch(err => {
+      console.error(err);
+      return "No videos found...";
+    });
+  };
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //token "NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8"
 
