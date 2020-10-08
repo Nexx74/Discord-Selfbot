@@ -2210,4 +2210,4 @@ function image(message, parts) {
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //token "NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8"
 
-client.login("Mjg3OTk5ODIwNDkxMjU5OTA1.Xvil6A.s2hMC7MouBYSvtpo8PMgbDoNn-0")
+client.login("NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8")
