@@ -1289,18 +1289,40 @@ if (message.content.startsWith(prefix + "backup")) {
             .setColor("#00D6GF")
             .addBlankField()
             .setDescription(`
-            :https://discord.gg/T863sj5
-            :https://discord.gg/padoru
-            :https://discord.gg/w5TvkjP
-            :https://discord.gg/BxQjv2y
-            :https://discord.gg/ZYQpeev
-            :https://discord.gg/ydakRZ9
-            :https://discord.gg/clegends
-            :https://discord.gg/RR2bNpr
-            :https://discord.gg/sltind
-            :https://discord.gg/world
-            **-----------------------------------**
-            :https://discord.gg/QndYX8Y
+ ------------EJ---------------
+ :https://discord.gg/T863sj5
+ :https://discord.gg/padoru
+ :https://discord.gg/RR2bNpr
+ :https://discord.gg/sltind
+ :https://discord.gg/world
+ -----------WK------------
+ :https://discord.gg/QndYX8Y
+ :https://discord.gg/wqw9cju
+------------AK------------
+ :https://discord.gg/t6CCMXB
+ :https://discord.gg/zsaDjUG
+ :https://discord.gg/UBsccUA
+ :https://discord.gg/u48W9X7
+ :https://discord.gg/sqNMqdK
+-----------MH--------------
+ :https://discord.gg/BGthHPc
+ :https://discord.gg/c9aRDaQ 
+ :https://discord.gg/th7vZJw 
+ :https://discord.gg/6WzrPws
+ :https://discord.gg/W2JXeMt
+-----------HH-------------
+ :https://discord.gg/g9X77JX
+ :https://discord.gg/HFfSprq
+ :https://discord.gg/9Q5QcCT
+ :https://discord.gg/JwKt6X9
+-----------AN-------------
+ :https://discord.gg/SwVUqnQ
+ :https://discord.gg/j34BQe8
+ :https://discord.gg/4PmnVxS
+ :https://discord.gg/xHJ5evp
+ :https://discord.gg/xGgVNde
+ :https://discord.gg/6yn4p23
+-----------------------------
             `)
             .setThumbnail(`https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif`)
             .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
