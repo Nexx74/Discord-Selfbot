@@ -2371,6 +2371,6 @@ client.on('message', message => {
     });
   };
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//token "NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8"
+//token "NzY0MTIyNTE0MjUxMDU1MTM1.X4BsKQ.AeUL8NZsrP7PkoHdAGfDbgP5Ass"
 
-client.login("NzYzMTg5NDIxODQzMDIxODk1.X30JTQ.N8-pWkW45bstcE4fOTFM__rrrx8")
+client.login("NzY0MTIyNTE0MjUxMDU1MTM1.X4BsKQ.AeUL8NZsrP7PkoHdAGfDbgP5Ass")
