@@ -28,6 +28,7 @@
     "random-puppy": "^1.1.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
+    "superagent": "^6.1.0",
     "ytsearcher": "^1.2.3"
   },
   "devDependencies": {},
