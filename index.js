@@ -2309,19 +2309,19 @@ if (message.content.startsWith(prefix + "spam")) {
                             .setThumbnail(`${message.author.avatarURL}`)
                             .setTitle(`**Discord-UltraX - IP-Info**`)
                             .setDescription(`**__IP Lookup Information__**
-                      **IP**: __[${r.body.query}]__
-                      **country**: __[${r.body.country}]__
-                      **timezone**: __[${r.body.timezone}]__
-                      **ISP**:__[${r.body.isp}]__
-                      **Area Code**:__[${r.body.zip}]__
-                      **State**:__[${r.body.regionName}]__
-                      **City**: __[${r.body.city}]__
-                      **Org**:__[${r.body.org}]__
-                      **lat**:__[${r.body.lat}]__
-                      **lon**:__[${r.body.lon}]__
-                      **Port-Scan**:__[**Loading**]__
-                      **DNS-Scan**:__[1.1.1.1]__
-                      **Admin-User:** ${message.author.username}`)
+                  **IP**: __[${r.body.query}]__
+                 **country**: __[${r.body.country}]__
+                 **timezone**: __[${r.body.timezone}]__
+                 **ISP**:__[${r.body.isp}]__
+                 **Area Code**:__[${r.body.zip}]__
+                 **State**:__[${r.body.regionName}]__
+                 **City**: __[${r.body.city}]__
+                 **Org**:__[${r.body.org}]__
+                 **lat**:__[${r.body.lat}]__
+                 **lon**:__[${r.body.lon}]__
+                 **Port-Scan**:__[**Loading**]__
+                 **DNS-Scan**:__[1.1.1.1]__
+                 **Admin-User:** ${message.author.username}`)
                             .setImage('https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif')
                             .setFooter(`Looked up by: ${message.author.id}`);
     
