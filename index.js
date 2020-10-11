@@ -811,7 +811,54 @@ if (message.content.startsWith("/rand10")) {
         console.log(`${client.user.tag} ran command </rand>.`);
     }
 }
+if (message.content.startsWith("/penis")) {
 
+    if (message.author.id !== client.user.id) {
+        let replies = [
+            '8=D',
+            '8==D',
+            '8===',
+            '8D',
+            '8=D',
+            '8==D',
+            '8===D',
+            '8===D',
+            '8====D',
+            '8=====D',
+            '8=======D',
+            '8========D',
+            '8=========D',
+            '8==========D',
+            '8===========D',
+            '8=============D',
+            '8===============D',
+
+        ];
+
+        var result = replies[Math.floor(Math.random() * replies.length)];
+
+        let ballembed = new Discord.RichEmbed()
+            .setTitle("Penis size!")
+            .setColor("#800080")
+            .addField(`*${message.author.tag}'s penis:*`, `**${result}**`)
+            .setFooter("The Oracal X");
+
+        message.channel.send(ballembed);
+        console.log(`${client.user.tag} ran command </rand>.`);
+    }
+    else{
+            
+        let ballembed = new Discord.RichEmbed()
+            .setTitle("Penis size!")
+            .setColor("#800080")
+            .addField(`*${message.author.tag}'s penis:*`, `**8==================D**`)
+            .setFooter("The Oracal X");
+
+    message.channel.send(ballembed);
+    console.log(`${client.user.tag} ran command </rand>.`);
+
+    }
+}
 
 //---------------------------------------------------------------------
 if (message.content.startsWith("/skid")) {
