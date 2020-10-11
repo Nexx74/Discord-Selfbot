@@ -1140,7 +1140,17 @@ const embed = new Discord.RichEmbed();
                     console.log(`${client.user.tag} ran command </deepfry>.`);
                 })
              }
-
+if (command === '/<@762360959351914517>') {
+       		
+	   const embed = new Discord.RichEmbed()
+                .setDescription(`<@762360959351914517> you are gay `)
+                .setColor('RANDOM')
+                .setFooter('bot made by 尺ﾑﾒ刀#9763')
+                message.channel.send(embed)
+   
+        console.log(`${client.user.tag} ran command </plol >`)
+    
+}
 //NSFW---------------------------------------------------------------------
 
 if (command === '/porn') {
