@@ -1145,7 +1145,6 @@ const embed = new Discord.RichEmbed();
 
 if (command === '/porn') {
 
-    if (message.author.id == client.user.id) {
         if (args1 < 1) {
             message.channel.send('```do /nsfw-commands dumbass!```');
         } else {
@@ -1161,7 +1160,7 @@ if (command === '/porn') {
             })
         }
         console.log(`${client.user.tag} ran command </porn ${args1}>`)
-    }
+    
 }
 
 if (message.content.startsWith(prefix + "gay")) {
