@@ -796,7 +796,7 @@ if (message.content.startsWith("/rand10")) {
             '7X',
             '8X',
             '9X',
-            '10X',
+            '10X'
         ];
 
         var result = replies[Math.floor(Math.random() * replies.length)];
@@ -811,13 +811,60 @@ if (message.content.startsWith("/rand10")) {
         console.log(`${client.user.tag} ran command </rand>.`);
     }
 }
+//---------------------------------------------------------------------
+if (message.content.startsWith("/retard-test")) {
+
+    if (message.author.id !== client.user.id) {
+        let replies = [
+            '10%',
+            '20%',
+            '30%',
+            '40%',
+            '50%',
+            '60%',
+            '70%',
+            '80%',
+            '90%',
+            '100%'
+        ];
+
+        var result = replies[Math.floor(Math.random() * replies.length)];
+
+        let ballembed = new Discord.RichEmbed()
+            .setTitle("Retard Test!")
+            .setColor("#800080")
+            .setDescription( `**this person ${result} retarded**`)
+            .setFooter("The Oracal X");
+
+        message.channel.send(ballembed);
+        console.log(`${client.user.tag} ran command </rand>.`);
+    }
+    else{
+            let replies = [
+                '10%',
+                '1%'
+            ];
+    
+            var result = replies[Math.floor(Math.random() * replies.length)];
+    
+            let ballembed = new Discord.RichEmbed()
+                .setTitle("Retard Test!")
+                .setColor("#800080")
+                .setDescription( `**this person ${result} retarded**`)
+                .setFooter("The Oracal X");
+    
+            message.channel.send(ballembed);
+            console.log(`${client.user.tag} ran command </rand>.`);
+
+    }
+}
 if (message.content.startsWith("/penis")) {
 
     if (message.author.id !== client.user.id) {
         let replies = [
             '8=D',
             '8==D',
-            '8===',
+            '8===D',
             '8D',
             '8=D',
             '8==D',
@@ -825,13 +872,8 @@ if (message.content.startsWith("/penis")) {
             '8===D',
             '8====D',
             '8=====D',
-            '8=======D',
-            '8========D',
-            '8=========D',
-            '8==========D',
-            '8===========D',
-            '8=============D',
-            '8===============D',
+            '8====D',
+            '8=====D'
 
         ];
 
