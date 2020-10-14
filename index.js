@@ -2475,4 +2475,4 @@ function image(message, parts) {
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //token "NzY1NzM5MzgyNjM1NDk1NDQ1.X4ZMiA.7xntPaA8H2JiAqA0vOcBaNylzIk"
 
-client.login("NzY1NzM5MzgyNjM1NDk1NDQ1.X4ZMiA.7xntPaA8H2JiAqA0vOcBaNylzIk)
+client.login("NzY1NzM5MzgyNjM1NDk1NDQ1.X4ZMiA.7xntPaA8H2JiAqA0vOcBaNylzIk")
