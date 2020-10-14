@@ -908,7 +908,7 @@ if (message.content.startsWith("/skid")) {
     if (message.author.id == client.user.id) {
 
         let ballembed = new Discord.RichEmbed()
-            .setTitle("᥅ꪖ᥊ꪀ#8146")
+            .setTitle("[ད₢₷ཌ]-᭙ꪖꪻꫀ᥅#9332")
             .setDescription('yes its true im a big skid everyone chat ogga bogga :bow: im humbled', true)
             .setColor("#000080")
             .setImage(result)
