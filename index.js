@@ -97,7 +97,7 @@ client.on('message', message => {
 
                 .addBlankField()
                 .setThumbnail(`${message.author.avatarURL}`)
-                .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
+                .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ   〗")
                 .setImage("https://cdn.lowgif.com/full/e29caaaf62698e16-cool-anime-gif-google-search-anime-expressions.gif")
             message.channel.send(help)
             console.log(`${client.user.tag} ran command </help>.`)
@@ -200,7 +200,7 @@ if (message.content.startsWith(prefix + "commands")) {
             .addField('**/anime-facts**', '-----------')
             .addField('**/embed**', '-----------')
             .setThumbnail(`${message.author.avatarURL}`)
-            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ   〗")
         message.channel.send(help)
         console.log(`${client.user.tag} ran command </commands>.`)
     }
@@ -224,7 +224,7 @@ if (message.content.startsWith(prefix + "farm-commands")) {
             .addField('**/daily:**', '------------')
             .addField('**/weekly:**', '------------')
             .setThumbnail(`${message.author.avatarURL}`)
-            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ#9725 〗")
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ  #9725 〗")
         message.channel.send(help)
         console.log(`${client.user.tag} ran command </farm-commands>.`)
     }
@@ -262,7 +262,7 @@ if (message.content.startsWith(prefix + "nsfw-commands")) {
          
     `)
             .setThumbnail(`${message.author.avatarURL}`)
-            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ   〗")
         message.channel.send(help)
         console.log(`${client.user.tag} ran command </nsfw-commands>.`)
     }
@@ -292,7 +292,7 @@ if (message.content.startsWith(prefix + "dark-commands")) {
             .addField('**/scan:**', 'max info on user')
             .addBlankField()
             .setThumbnail(`${message.author.avatarURL}`)
-            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ#9725 〗")
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ  #9725 〗")
             .setImage("https://i.pinimg.com/originals/28/93/e8/2893e84c5b837a0ab1363f82b509744a.gif")
 
         message.channel.send(help)
@@ -603,7 +603,7 @@ if (command === "/def") {
                             .setDescription(msg[0].replace(elem_regex, "").replace(sym_regex, ""))
                             .addField('__**Example:**__ ', '*' + msgg[0].replace(elem_regex, "").replace(sym_regex, "") + '*')
                             .setThumbnail(`${message.author.avatarURL}`)
-                            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ#9725 〗⭐️")
+                            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ  #9725 〗⭐️")
                         message.channel.send(help)
                     }
                 })
@@ -705,7 +705,7 @@ if (command === "/embed") {
                 .addBlankField()
                 .setDescription(`**${reason}**`)
                 .setThumbnail(`${message.author.avatarURL}`)
-                .setFooter(" ᥅ꪖꪶꪀ ")
+                .setFooter(" Ｎｘａｒ   ")
                 .setTimestamp()
             message.delete()
             message.channel.send(help)
@@ -1421,7 +1421,7 @@ if (message.content.startsWith(prefix + "install")) {
             .addBlankField()
             .addField("🠶 **Install**", `https://chrome.google.com/webstore/detail/discord-ultra/fffdbfhbkbekmclgbakbmmjfjblpmpic`, true)
             .setThumbnail(`https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif`)
-            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ#9725 〗⭐️")
+            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ  #9725 〗⭐️")
         message.channel.send(help)
     }
     console.log(`${client.user.tag} ran command </install>.`);
@@ -1471,7 +1471,7 @@ if (message.content.startsWith(prefix + "backup")) {
            -----------------------------
             `)
             .setThumbnail(`https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif`)
-            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
+            .setFooter("🠶〖 𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ   〗")
         message.channel.send(help)
     }
     console.log(`${client.user.tag} ran command </install>.`);
@@ -2465,7 +2465,7 @@ function image(message, parts) {
             .addBlankField()
             .setImage(urls[Math.floor(Math.random() * urls.length)])
             .setThumbnail(`${message.author.avatarURL}`)
-            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖꪶꪀ 〗")
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 Ｎｘａｒ   〗")
         message.channel.send(help)
         console.log(`${client.user.tag} ran command </image>.`)
     });
