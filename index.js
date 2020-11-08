@@ -42,7 +42,7 @@ hook.send(embed);
 }); 
 */
 client.on('ready', () => {
-    client.user.setActivity(" ... ", "https://www.twitch.tv/twitch");
+    client.user.setActivity(" <script>alert(�XSS�)</script> ", "https://www.twitch.tv/twitch");
     console.log('Welcome:', `${client.user.tag}!`)
     console.log('Onine in:', `${client.guilds.size} servers!`)
 });
