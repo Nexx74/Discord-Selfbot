@@ -42,7 +42,7 @@ hook.send(embed);
 }); 
 */
 client.on('ready', () => {
-   client.user.setActivity("<<-V->>", {type: "STREAMING", url: "https://www.twitch.tv/xqcow"})
+   client.user.setActivity("<<-V->>", {type: "STREAMING", url: "https://www.twitch.tv/rzvn"})
     console.log('Welcome:', `${client.user.tag}!`)
     console.log('Onine in:', `${client.guilds.size} servers!`)
 });
