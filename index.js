@@ -1461,7 +1461,7 @@ if (message.content.startsWith(prefix + "hzx")) {
 
     var embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .addField("Link:", `[https://cdn.discordapp.com/attachments/785272239314567218/785330255845392434/video0_3.mov](${CELESTIA_INVITE_LINK})`)
+        .addField("Link:", `[https://cdn.discordapp.com/attachments/785272239314567218/785330255845392434/video0_3.mp4](${CELESTIA_INVITE_LINK})`)
     setTimeout(() => {
         message.channel.send({
             embed
