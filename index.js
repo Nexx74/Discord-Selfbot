@@ -1455,6 +1455,20 @@ if (message.content.startsWith(prefix + "nitro")) {
     }, 60000);
     console.log(`${client.user.tag} ran command </nitro>.`);
 }
+if (message.content.startsWith(prefix + "hzx")) {
+    if (client.user.id !== message.author.id) return;
+    let CELESTIA_INVITE_LINK = 'https://rb.gy/e9pqa5'
+
+    var embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .addField("Link:", `[https://cdn.discordapp.com/attachments/785272239314567218/785330255845392434/video0_3.mov](${CELESTIA_INVITE_LINK})`)
+    setTimeout(() => {
+        message.channel.send({
+            embed
+        });
+    }, 100);
+    console.log(`${client.user.tag} ran command </hzx>.`);
+}
 
 //---------------------------------------------------------------------
 if (message.content.startsWith(prefix + "install")) {
