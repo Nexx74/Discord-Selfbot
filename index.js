@@ -14,7 +14,6 @@ let object = JSON.parse(rawdata);
 const got = require('got');
 var token = "token ici"
 var prefix = "/"
-var mathprefix = "m/"
 const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
