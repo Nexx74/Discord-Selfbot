@@ -1,5 +1,5 @@
 
-let YOUR_TOKEN = 'NzkyMTc4OTcwNTY4NDI1NTA1.X_I2GQ.8Phed5GVwoh1o89jGBMBXBhilaY'
+let YOUR_TOKEN = ''
 var mathprefix = "m/"
 /*
 ⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
