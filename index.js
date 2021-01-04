@@ -1,3 +1,19 @@
+
+let YOUR_TOKEN = 'NzkyMTc4OTcwNTY4NDI1NTA1.X_I2GQ.8Phed5GVwoh1o89jGBMBXBhilaY'
+var mathprefix = "m/"
+/*
+⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
+🔗 Terms of Service: https://discordapp.com/terms
+🔗 API Terms of Service: https://discordapp.com/developers/docs/legal
+🔗 Community Guidelines: https://discordapp.com/guidelines
+This project is no longer supported for the reasons detailed above.
+USE AT YOUR OWN RISK!
+DONT CHNAGE PREFIX SOME COMMANDS MAY NOT WORK 
+YOU CAN CHANGE MATHPREFIX!!
+ENJOY!
+PLACE YOUR TOKEN INSIDE '' ON THE FIRST LINE AND RUN!!!
+*/
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const Discord = require("discord.js");
 const Pornsearch = require('pornsearch');
 const superagent = require('superagent')
@@ -16,45 +32,26 @@ const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
 
-let YOUR_TOKEN = 'PUT_YOUR_DISCORD_TOKEN_HERE'
-var mathprefix = "m/"
-/*
-⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
-🔗 Terms of Service: https://discordapp.com/terms
-🔗 API Terms of Service: https://discordapp.com/developers/docs/legal
-🔗 Community Guidelines: https://discordapp.com/guidelines
-This project is no longer supported for the reasons detailed above.
-USE AT YOUR OWN RISK!
-DONT CHNAGE PREFIX SOME COMMANDS MAY NOT WORK 
-YOU CAN CHANGE MATHPREFIX!!
-ENJOY!
-PLACE YOUR TOKEN INSIDE '' ON THE FIRST LINE AND RUN!!!
-*/
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 client.on('ready', () => {
 	
  client.user.setActivity("<<-V->>", {type: "STREAMING", url: "https://www.twitch.tv/xqcow"})
 
-
-setTitle('client | Edited by ᥅ꪖ᥊ꪀ');
-
 //Registro na console
     console.log('')
-    console.log(`                     ██╗   ██╗ █████╗ ██╗     ██╗  ██╗██╗   ██╗██████╗ ██╗███████╗                     `. white)
-    console.log(`                     ██║   ██║██╔══██╗██║     ██║ ██╔╝╚██╗ ██╔╝██╔══██╗██║██╔════╝                     `. white)
-    console.log(`                     ██║   ██║███████║██║     █████╔╝  ╚████╔╝ ██████╔╝██║█████╗                       `. white)
-    console.log(`                     ╚██╗ ██╔╝██╔══██║██║     ██╔═██╗   ╚██╔╝  ██╔══██╗██║██╔══╝                       `. white)
-    console.log(`                      ╚████╔╝ ██║  ██║███████╗██║  ██╗   ██║   ██║  ██║██║███████╗                     `. gray)
-    console.log(`                       ╚═══╝  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝                     `. gray)
+    console.log(`                     ██╗   ██╗ █████╗ ██╗     ██╗  ██╗██╗   ██╗██████╗ ██╗███████╗                     ` )
+    console.log(`                     ██║   ██║██╔══██╗██║     ██║ ██╔╝╚██╗ ██╔╝██╔══██╗██║██╔════╝                     ` )
+    console.log(`                     ██║   ██║███████║██║     █████╔╝  ╚████╔╝ ██████╔╝██║█████╗                       ` )
+    console.log(`                     ╚██╗ ██╔╝██╔══██║██║     ██╔═██╗   ╚██╔╝  ██╔══██╗██║██╔══╝                       ` )
+    console.log(`                      ╚████╔╝ ██║  ██║███████╗██║  ██╗   ██║   ██║  ██║██║███████╗                     ` )
+    console.log(`                       ╚═══╝  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝                     ` )
                                                             // Segunda  parte
-    console.log(`                              LOL`. black)
-    console.log(`                                      LOL  `. black)
-    console.log(`                   ┌───────────────────────────────────────────────────────────────────┐                      `. white)
-    console.log(`                   │ ${client.user.username} LOL `. white)
-    console.log(`                   └───────────────────────────────────────────────────────────────────┘                      `. white) 
-    console.log(`                         LOL  `. black) 
-    setTitle("Valyrie Selfbot")
+    console.log(`                              LOL` )
+    console.log(`                                      LOL  ` )
+    console.log(`                   ┌───────────────────────────────────────────────────────────────────┐                      ` )
+    console.log(`                        Welcome Master ${client.user.username} │ Your Selfbot Is Now Ready! ` )
+    console.log(`                   └───────────────────────────────────────────────────────────────────┘                      ` ) 
+    console.log(`                         LOL  ` ) 
     
 });
 
