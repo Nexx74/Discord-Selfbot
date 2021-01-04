@@ -9,8 +9,6 @@ const fs = require('fs')
 const randomPuppy = require('random-puppy');
 var snekfetch = require("snekfetch");
 const fetch = require('node-fetch');
-let rawdata = fs.readFileSync('config.json');
-let object = JSON.parse(rawdata);
 const got = require('got');
 var token = "token ici"
 var prefix = "/"
@@ -18,7 +16,7 @@ const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
 
-let YOUR_TOKEN = 'YOUR_TOKEN_HERE'
+let YOUR_TOKEN = 'PUT_YOUR_DISCORD_TOKEN_HERE'
 var mathprefix = "m/"
 /*
 ⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
@@ -60,8 +58,6 @@ setTitle('client | Edited by ᥅ꪖ᥊ꪀ');
     
 });
 
-//---------
-});
 
 //READY-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 client.on("message", async(msg)=>{
