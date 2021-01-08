@@ -1,6 +1,6 @@
 
 {
   "WARNING": "DO NOT CHANGE THE PREFIX!!! DO /HELP and /COMMANDS TO USE THIS BOT",
-  "prefix": "/"
+  "prefix": "/",
   "YourToken": "PUT_TOKEN_HERE"
 }
