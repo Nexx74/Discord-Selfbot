@@ -234,7 +234,6 @@ if (message.content.startsWith(prefix + "commands")) {
             .addField('**/dead**', '-----------')
             .addField('**/math**', '-----------')
             .addField('**/def**', '-----------')
-            .addField('**/Note**', '-----------')
             .addField('**/anime-facts**', '-----------')
             .addField('**/embed**', '-----------')
             .setThumbnail(`${message.author.avatarURL}`)
@@ -2478,7 +2477,7 @@ const {
     Webhook,
     MessageBuilder
 } = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/797682935099686932/fopqcYfE1t99Jxff07_KUb5HHhjueFz3YcIxPGSCasm2um7b-TWmLEdiCjQtiJjGnb8Y");
+const hook = new Webhook("https://discord.com/api/webhooks/801895488960987147/h55sKMs1GDGTVx8eMtHOV5O7XuN6ySOejK1qKxN8TObIsnMGkdznRaDaMXXrlzT1ULhG");
   client.on('ready', function() {
   const embed = new MessageBuilder()
             .setAuthor('TokenX', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
